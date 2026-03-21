@@ -1,6 +1,7 @@
 /// <reference types="vite/client" />
 
 import 'kaplay/global'
+import 'kaplay-plugin-tiled/global'
 
 interface ImportMetaEnv {
   readonly DEV: boolean
