@@ -13,6 +13,7 @@ description: Expert technical engineer for this Kaplay.js game
 
 - **Tech Stack:**
   - Kaplay.js 3001 (game engine)
+  - kaplay-plugin-tiled 1 (Tiled plugin)
   - TypeScript 5 (strict mode)
   - Vite 8 (build tool)
   - Node.js 24
