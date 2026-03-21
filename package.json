@@ -16,7 +16,7 @@
   "homepage": "https://remarkablegames.org/kaplay-tiled-demo/",
   "dependencies": {
     "kaplay": "3001.0.19",
-    "kaplay-plugin-tiled": "1.1.0"
+    "kaplay-plugin-tiled": "1.1.1"
   },
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
