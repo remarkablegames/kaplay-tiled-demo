@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/favicon.png" width="200" alt="Kaplay Template">
+  <img src="public/favicon.png" width="200" alt="Kaplay Tiled Demo">
 </p>
 
-# Kaplay Template
+# Kaplay Tiled Demo
 
 [![release](https://img.shields.io/github/v/release/remarkablegames/kaplay-tiled-demo)](https://github.com/remarkablegames/kaplay-tiled-demo/releases)
 [![build](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml)
@@ -35,25 +35,6 @@ Install the dependencies:
 ```sh
 npm install
 ```
-
-Rename the project:
-
-```sh
-git grep -l kaplay-tiled-demo | xargs sed -i '' -e 's/kaplay-tiled-demo/my-game/g'
-```
-
-```sh
-git grep -l 'Kaplay Template' | xargs sed -i '' -e 's/Kaplay Template/My Game/g'
-```
-
-Update the files:
-
-- [ ] `README.md`
-- [ ] `index.html`
-- [ ] `package.json`
-- [ ] `public/app-icon.png`
-- [ ] `public/favicon.png`
-- [ ] `public/manifest.webmanifest`
 
 ## Environment Variables
 
