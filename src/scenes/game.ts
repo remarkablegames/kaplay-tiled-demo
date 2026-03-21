@@ -1,16 +1,21 @@
-import { SCENE } from '../constants'
-import { addEnemy, addPlayer } from '../gameobjects'
+import { ASSET, SCENE, SPRITE } from '../constants'
+import { addPlayer } from '../gameobjects'
 
 scene(SCENE.GAME, () => {
+  addTiledMap(ASSET.LEVEL, {
+    sprite: SPRITE.TILESET,
+    objects: [
+      {
+        match: { properties: { collides: true } },
+        comps: ({ objectSize }) => [
+          area({
+            shape: new Rect(vec2(), objectSize.width, objectSize.height),
+          }),
+          body({ isStatic: true }),
+        ],
+      },
+    ],
+  })
+
   addPlayer()
-
-  onClick(() => addKaboom(mousePos()))
-
-  add([text('Press arrow keys', { width: width() / 2 }), pos(12, 12)])
-
-  for (let i = 0; i < 3; i++) {
-    const x = rand(0, width())
-    const y = rand(0, height())
-    addEnemy(x, y)
-  }
 })

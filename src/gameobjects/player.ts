@@ -1,4 +1,4 @@
-import { SPRITE, TAG } from '../constants'
+import { SPRITE } from '../constants'
 import { addCursorKeys } from '../events'
 
 export function addPlayer(x = center().x, y = center().y) {
@@ -7,14 +7,12 @@ export function addPlayer(x = center().x, y = center().y) {
     pos(x, y),
     rotate(0),
     anchor('center'),
-    TAG.PLAYER,
+    area(),
+    body(),
+    z(1),
   ])
 
   addCursorKeys(player)
-
-  player.onUpdate(() => {
-    player.angle += 120 * dt()
-  })
 
   return player
 }

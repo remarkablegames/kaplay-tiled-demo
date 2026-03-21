@@ -1,7 +1,11 @@
-import { SCENE, SPRITE } from '../constants'
+import { ASSET, SCENE, SPRITE } from '../constants'
 
-scene(SCENE.PRELOAD, () => {
+// eslint-disable-next-line @typescript-eslint/no-misused-promises
+scene(SCENE.PRELOAD, async () => {
   loadSprite(SPRITE.BEAN, 'sprites/bean.png')
-  loadSprite(SPRITE.GHOSTY, 'sprites/ghosty.png')
+  loadSprite(SPRITE.TILESET, 'tiled/tileset.png')
+
+  await loadJSON(ASSET.LEVEL, 'tiled/level.json')
+
   go(SCENE.GAME)
 })
