@@ -4,10 +4,9 @@
 
 # Kaplay Tiled Demo
 
-[![release](https://img.shields.io/github/v/release/remarkablegames/kaplay-tiled-demo)](https://github.com/remarkablegames/kaplay-tiled-demo/releases)
 [![build](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml)
 
-<kbd>kaplay-tiled-demo</kbd> is a template for making [KAPLAY](https://kaplayjs.com/) games.
+[KAPLAY](https://kaplayjs.com/) [Tiled](https://www.mapeditor.org/) map demo using [kaplay-plugin-tiled](https://github.com/remarkablegames/kaplay-plugin-tiled).
 
 Play the game on:
 
