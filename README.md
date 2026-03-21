@@ -4,14 +4,14 @@
 
 # Kaplay Template
 
-[![release](https://img.shields.io/github/v/release/remarkablegames/kaplay-template)](https://github.com/remarkablegames/kaplay-template/releases)
-[![build](https://github.com/remarkablegames/kaplay-template/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/kaplay-template/actions/workflows/build.yml)
+[![release](https://img.shields.io/github/v/release/remarkablegames/kaplay-tiled-demo)](https://github.com/remarkablegames/kaplay-tiled-demo/releases)
+[![build](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablegames/kaplay-tiled-demo/actions/workflows/build.yml)
 
-<kbd>kaplay-template</kbd> is a template for making [KAPLAY](https://kaplayjs.com/) games.
+<kbd>kaplay-tiled-demo</kbd> is a template for making [KAPLAY](https://kaplayjs.com/) games.
 
 Play the game on:
 
-- [remarkablegames](https://remarkablegames.org/kaplay-template/)
+- [remarkablegames](https://remarkablegames.org/kaplay-tiled-demo/)
 
 ## Prerequisites
 
@@ -26,8 +26,8 @@ brew install nvm
 Clone the repository:
 
 ```sh
-git clone https://github.com/remarkablegames/kaplay-template.git
-cd kaplay-template
+git clone https://github.com/remarkablegames/kaplay-tiled-demo.git
+cd kaplay-tiled-demo
 ```
 
 Install the dependencies:
@@ -39,7 +39,7 @@ npm install
 Rename the project:
 
 ```sh
-git grep -l kaplay-template | xargs sed -i '' -e 's/kaplay-template/my-game/g'
+git grep -l kaplay-tiled-demo | xargs sed -i '' -e 's/kaplay-tiled-demo/my-game/g'
 ```
 
 ```sh
