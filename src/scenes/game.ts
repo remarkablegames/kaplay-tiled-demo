@@ -1,5 +1,6 @@
-import { ASSET, SCENE, SPRITE } from '../constants'
-import { addPlayer } from '../gameobjects'
+import { ASSET, SCENE, SPRITE, TAG } from '../constants'
+import { addCursorKeys } from '../events'
+import { getPlayer } from '../gameobjects'
 
 scene(SCENE.GAME, () => {
   addTiledMap(ASSET.LEVEL, {
@@ -7,20 +8,34 @@ scene(SCENE.GAME, () => {
     objects: [
       {
         match: { properties: { collides: true } },
-        comps: ({ objectSize }) => [
+        comps: ({ width, height }) => [
           area({
-            shape: new Rect(vec2(), objectSize.width, objectSize.height),
+            shape: new Rect(vec2(), width, height),
           }),
           body({ isStatic: true }),
         ],
       },
       {
         match: { name: 'Spawn Point' },
-        comps: ({ pos }) => {
-          addPlayer(pos.x, pos.y)
-          return []
-        },
+        comps: ({ x, y }) => [
+          sprite(SPRITE.BEAN),
+          pos(x, y),
+          rotate(0),
+          anchor('center'),
+          area(),
+          body(),
+          z(1),
+          TAG.PLAYER,
+        ],
       },
     ],
+  })
+
+  const player = getPlayer()
+
+  addCursorKeys(player)
+
+  player.onUpdate(() => {
+    setCamPos(player.pos)
   })
 })

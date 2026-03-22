@@ -1,22 +1,6 @@
-import { SPRITE } from '../constants'
-import { addCursorKeys } from '../events'
+import { TAG } from '../constants'
+import type { Player } from '../types'
 
-export function addPlayer(x = center().x, y = center().y) {
-  const player = add([
-    sprite(SPRITE.BEAN),
-    pos(x, y),
-    rotate(0),
-    anchor('center'),
-    area(),
-    body(),
-    z(1),
-  ])
-
-  addCursorKeys(player)
-
-  player.onUpdate(() => {
-    setCamPos(player.pos)
-  })
-
-  return player
+export function getPlayer() {
+  return get(TAG.PLAYER)[0] as Player
 }

@@ -1,3 +1,3 @@
-import { addPlayer } from '../gameobjects'
+import type { GameObj, PosComp } from 'kaplay'
 
-export type Player = ReturnType<typeof addPlayer>
+export type Player = GameObj<PosComp>
