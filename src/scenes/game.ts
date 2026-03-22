@@ -14,8 +14,13 @@ scene(SCENE.GAME, () => {
           body({ isStatic: true }),
         ],
       },
+      {
+        match: { name: 'Spawn Point' },
+        comps: ({ pos }) => {
+          addPlayer(pos.x, pos.y)
+          return []
+        },
+      },
     ],
   })
-
-  addPlayer()
 })

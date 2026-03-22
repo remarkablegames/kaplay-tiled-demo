@@ -14,5 +14,9 @@ export function addPlayer(x = center().x, y = center().y) {
 
   addCursorKeys(player)
 
+  player.onUpdate(() => {
+    setCamPos(player.pos)
+  })
+
   return player
 }
