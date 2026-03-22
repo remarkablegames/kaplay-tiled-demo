@@ -391,6 +391,101 @@
         },
         {
           "height": 94,
+          "id": 282,
+          "name": "",
+          "opacity": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 158,
+          "x": 97,
+          "y": 737
+        },
+        {
+          "height": 94,
+          "id": 283,
+          "name": "",
+          "opacity": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 158,
+          "x": 353,
+          "y": 737
+        },
+        {
+          "height": 94,
+          "id": 284,
+          "name": "",
+          "opacity": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 158,
+          "x": 609,
+          "y": 737
+        },
+        {
+          "height": 94,
+          "id": 285,
+          "name": "",
+          "opacity": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 158,
+          "x": 513,
+          "y": 1025
+        },
+        {
+          "height": 94,
+          "id": 286,
+          "name": "",
+          "opacity": 1,
+          "properties": [
+            {
+              "name": "collides",
+              "type": "bool",
+              "value": true
+            }
+          ],
+          "rotation": 0,
+          "type": "",
+          "visible": true,
+          "width": 158,
+          "x": 193,
+          "y": 1025
+        },
+        {
+          "height": 94,
           "id": 280,
           "name": "",
           "opacity": 1,
@@ -436,7 +531,7 @@
     }
   ],
   "nextlayerid": 5,
-  "nextobjectid": 282,
+  "nextobjectid": 287,
   "orientation": "orthogonal",
   "properties": [
     {
